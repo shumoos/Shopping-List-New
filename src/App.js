@@ -45,13 +45,13 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center space-y-6 p-6 bg-gradient-to-b from-purple-900 to-black text-white">
+    <div className="min-h-screen flex flex-col items-center space-y-6 gap-6 p-6 bg-gradient-to-b from-purple-900 to-black text-white">
       
-<h1 className="text-2xl font-bold">🛒Shopping List</h1>
+<h1 className="text-2xl md:text-4xl font-bold text-center">🛒Shopping List</h1>
 
 
       {/* النموذج */}
-      <div className="flex gap-10 mb-6 space-x-3">
+      <div className="flex flex-col md:flex-row gap-10 w-full  mb-6 space-x-3">
         <input
           type="text"
           placeholder="Name Item"
@@ -81,7 +81,7 @@ function App() {
       </div>
 
       {/* الإحصائيات */}
-      <div className="mb-4 text-lg space-y-3">
+      <div className="text-center mb-4 text-lg space-y-3">
         <p>totalItems: {totalItems}</p>
         <p>totalPrice: {totalPrice}$</p>
       </div>
