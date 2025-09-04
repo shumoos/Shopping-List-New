@@ -42,6 +42,10 @@ function App() {
       <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg w-full max-w-md text-center text-white">
         <h1 className="text-2xl font-bold mb-6">🛒 Shopping List</h1>
 
+
+      
+     
+
         {/* الفورم */}
         <div className="flex flex-col space-y-4 w-full">
           <input
