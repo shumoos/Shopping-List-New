@@ -33,9 +33,22 @@ function App() {
     setItems([]);
   };
 
+  
+
   // المجموع
   const totalItems = items.length;
   const totalPrice = items.reduce((sum, item) => sum + item.price, 0);
+  //تلوين السعر
+const getPriceColor = (price) => {
+  if (price < 10) {
+    return "text-green-600"; // رخيص
+  } else if (price >= 10 && price <= 50) {
+    return "text-orange-500"; // وسط
+  } else {
+    return "text-red-600"; // غالي
+  }
+};
+
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-purple-900 to-black p-6">
@@ -100,7 +113,10 @@ function App() {
             >
               <div>
                 <h2 className="font-semibold">{item.name}</h2>
-                <p className="text-sm">{item.price}$</p>
+                <p className={`text-sm ${getPriceColor(item.price)}`}>
+  {item.price}$
+</p>
+
               </div>
 
               <div className="flex gap-2">

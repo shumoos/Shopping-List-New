@@ -2,7 +2,6 @@
   "name": "shopping-list",
   "version": "0.1.0",
   "private": true,
-
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
@@ -15,18 +14,15 @@
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.12.2",
     "web-vitals": "^2.1.4"
-
-},
-"homepage": "https://shumoos.github.io/Shopping-List",
-
+  },
+  "homepage": "https://shumoos.github.io/Shopping-List-New",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
-
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
